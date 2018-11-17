@@ -16,18 +16,18 @@ class Bloco(object):
     @property
     def abertura(self):
         # Define o indicador de movimento ou dados
-        self.registro_abertura[2] = '0' if self._registros else '1'
-        print(self.registro_abertura)
-        print(self.registro_abertura[2])
+        # self.registro_abertura[2] = '0' if self._registros else '1'
+        # print(self.registro_abertura)
+        # print(self.registro_abertura[2])
         return self.registro_abertura
 
     @property
     def encerramento(self):
         # Define a quantidade de registros
-        if self.registro_abertura.REG[0] == '0' or self.registro_abertura.REG[0] == '9':
-            self.registro_encerramento[2] = len(self._registros) + 3
-        else:
-            self.registro_encerramento[2] = len(self._registros) + 2
+        # if self.registro_abertura.REG[0] == '0' or self.registro_abertura.REG[0] == '9':
+        #     self.registro_encerramento[2] = len(self._registros) + 3
+        # else:
+        #     self.registro_encerramento[2] = len(self._registros) + 2
         return self.registro_encerramento
 
     @property

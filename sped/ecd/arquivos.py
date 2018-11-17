@@ -20,10 +20,10 @@ class ArquivoDigital(arquivos.ArquivoDigital):
 
     def __init__(self):
         super(ArquivoDigital, self).__init__()
-        self._blocos['0'] = Bloco0()
-        self._blocos['I'] = BlocoI()
-        self._blocos['J'] = BlocoJ()
-        self._blocos['9'] = Bloco9()
+        self._blocos['0'] = Bloco0('0')
+        self._blocos['I'] = BlocoI('I')
+        self._blocos['J'] = BlocoJ('J')
+        self._blocos['9'] = Bloco9('9')
 
     def prepare(self):
         bloco_9 = self._blocos['9'] = Bloco9()
